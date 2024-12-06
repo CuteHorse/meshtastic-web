@@ -13,6 +13,34 @@ import { Dashboard } from "@pages/Dashboard/index.tsx";
 import { MapProvider } from "react-map-gl";
 
 export const App = (): JSX.Element => {
+
+ const { addDevice } = useDeviceStore();
+ const { setSelectedDevice } = useAppStore();
+
+ useEffect(() => {
+   
+ fetch("/nodes.json")
+      .then((resp) => resp.json())
+      .then(async (json) => {
+        for (const item of json) {
+          const id = item.id;
+          const device = addDevice(id);
+          const connection = new HttpConnection(id);
+          await connection.connect({
+            address: item.ip,
+            fetchInterval: item.interval,
+            tls: item.tls,
+          });
+
+          setSelectedDevice(id);
+          device.addConnection(connection);
+          subscribeAll(device, connection);
+        }
+      });
+  }, [addDevice, setSelectedDevice]);
+
+
+  
   const { getDevice } = useDeviceStore();
   const { selectedDevice, setConnectDialogOpen, connectDialogOpen } =
     useAppStore();
