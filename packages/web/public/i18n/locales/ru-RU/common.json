@@ -1,0 +1,165 @@
+{
+  "button": {
+    "apply": "Применить",
+    "addConnection": "Добавить подключение",
+    "saveConnection": "Сохранить подключение",
+    "backupKey": "Бэкап ключа",
+    "cancel": "Отмена",
+    "connect": "Подключиться",
+    "clearMessages": "Очистить сообщения",
+    "close": "Закрыть",
+    "confirm": "Подтвердить",
+    "delete": "Удалить",
+    "dismiss": "Отменить",
+    "download": "Скачать",
+    "disconnect": "Отключиться",
+    "export": "Экспорт",
+    "generate": "Создать",
+    "regenerate": "Создать снова",
+    "import": "Импортировать",
+    "message": "Сообщение",
+    "now": "Сейчас",
+    "ok": "Лады",
+    "print": "Печать",
+    "remove": "Удалить",
+    "requestNewKeys": "Запрос нового ключа",
+    "requestPosition": "Запрос позиции",
+    "reset": "Сброс",
+    "retry": "Повторить",
+    "save": "Сохранить",
+    "setDefault": "Установить по умолчанию",
+    "unsetDefault": "Убрать умолчание",
+    "scanQr": "Сканировать QR код",
+    "traceRoute": "Отследить маршрут",
+    "submit": "Отправить"
+  },
+  "app": {
+    "title": "Meshtastic",
+    "fullTitle": "Веб клиент Meshtastic"
+  },
+  "loading": "Загрузка...",
+  "unit": {
+    "cps": "CPS",
+    "dbm": "dBm",
+    "hertz": "Гц",
+    "hop": {
+      "one": "Прыжок",
+      "plural": "Прыжков"
+    },
+    "hopsAway": {
+      "one": "{{count}} прыжок до",
+      "plural": "{{count}} прыжков",
+      "unknown": "? прыжков"
+    },
+    "megahertz": "МГц",
+    "kilohertz": "кГц",
+    "raw": "raw",
+    "meter": {
+      "one": "Метр",
+      "plural": "Метров",
+      "suffix": "м"
+    },
+    "kilometer": {
+      "one": "Километр",
+      "plural": "Километров",
+      "suffix": "км"
+    },
+    "minute": {
+      "one": "Минута",
+      "plural": "Минут"
+    },
+    "hour": {
+      "one": "Час",
+      "plural": "Часов"
+    },
+    "millisecond": {
+      "one": "Миллисекунда",
+      "plural": "Миллисекунд",
+      "suffix": "мс"
+    },
+    "second": {
+      "one": "Секунда",
+      "plural": "Секунд"
+    },
+    "day": {
+      "one": "День",
+      "plural": "Дней",
+      "today": "Сегодня",
+      "yesterday": "Вчера"
+    },
+    "month": {
+      "one": "Месяц",
+      "plural": "Месяцев"
+    },
+    "year": {
+      "one": "Year",
+      "plural": "Years"
+    },
+    "snr": "Сигнал/шум",
+    "volt": {
+      "one": "Volt",
+      "plural": "Volts",
+      "suffix": "V"
+    },
+    "record": {
+      "one": "Records",
+      "plural": "Records"
+    },
+    "degree": {
+      "one": "Degree",
+      "plural": "Degrees",
+      "suffix": "°"
+    }
+  },
+  "security": {
+    "0bit": "Empty",
+    "8bit": "8 bit",
+    "128bit": "128 bit",
+    "256bit": "256 bit"
+  },
+  "unknown": {
+    "longName": "Неизвестно",
+    "shortName": "UNK",
+    "notAvailable": "N/A",
+    "num": "??"
+  },
+  "nodeUnknownPrefix": "!",
+  "unset": "UNSET",
+  "fallbackName": "Meshtastic {{last4}}",
+  "node": "Node",
+  "formValidation": {
+    "unsavedChanges": "Unsaved changes",
+    "tooBig": {
+      "string": "Too long, expected less than or equal to {{maximum}} characters.",
+      "number": "Too big, expected a number smaller than or equal to {{maximum}}.",
+      "bytes": "Too big, expected less than or equal to {{params.maximum}} bytes."
+    },
+    "tooSmall": {
+      "string": "Too short, expected more than or equal to {{minimum}} characters.",
+      "number": "Too small, expected a number larger than or equal to {{minimum}}."
+    },
+    "invalidFormat": {
+      "ipv4": "Invalid format, expected an IPv4 address.",
+      "key": "Invalid format, expected a Base64 encoded pre-shared key (PSK)."
+    },
+    "invalidType": {
+      "number": "Invalid type, expected a number."
+    },
+    "pskLength": {
+      "0bit": "Key is required to be empty.",
+      "8bit": "Key is required to be an 8 bit pre-shared key (PSK).",
+      "128bit": "Key is required to be a 128 bit pre-shared key (PSK).",
+      "256bit": "Key is required to be a 256 bit pre-shared key (PSK)."
+    },
+    "required": {
+      "generic": "This field is required.",
+      "managed": "At least one admin key is requred if the node is managed.",
+      "key": "Key is required."
+    },
+    "invalidOverrideFreq": {
+      "number": "Invalid format, expected a value in the range 410-930 MHz or 0 (use default)."
+    }
+  },
+  "yes": "Yes",
+  "no": "No"
+}

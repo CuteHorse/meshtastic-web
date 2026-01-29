@@ -1,7 +1,10 @@
 {
-  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "quickfix.biome": "explicit"
+    "source.fixAll.biome": "explicit"
   },
-  "editor.formatOnSave": true
+  "search.exclude": {
+    "**/i18n/locales/*-*/**": true
+  },
+  "vitest.workspaceConfig": "vitest.config.ts"
 }

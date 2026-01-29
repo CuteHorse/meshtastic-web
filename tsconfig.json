@@ -1,40 +1,9 @@
 {
-  "include": ["src"],
-  "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": false,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "baseUrl": "./",
-    "paths": {
-      "@app/*": ["./src/*"],
-      "@pages/*": ["./src/pages/*"],
-      "@components/*": ["./src/components/*"],
-      "@core/*": ["./src/core/*"],
-      "@layouts/*": ["./src/layouts/*"]
-    },
-    "importHelpers": true,
-    "removeComments": true,
-    "strictNullChecks": true,
-    "types": [
-      "vite/client",
-      "node",
-      "@types/web-bluetooth",
-      "@types/w3c-web-serial"
-    ],
-    "strictPropertyInitialization": false,
-    "experimentalDecorators": true,
-    "allowImportingTsExtensions": true,
-  }
+  "extends": "./tsconfig.base.json",
+
+  "files": [],
+  "references": [
+    { "path": "packages/web" },
+    { "path": "packages/transport-http" }
+  ]
 }
